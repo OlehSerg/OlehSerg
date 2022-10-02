@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 align="center">Заголовок первого уровня</h1> 
+<h3>Предварительно форматированный текст:</h3>
+
+<pre>
+x | o |
+‐‐‐‐‐‐‐‐‐‐‐
+  | х |
+‐‐‐‐‐‐‐‐‐‐‐
+o | x | o
+<hr>
+</pre>
+
+<h3>Тег address</h3>
+<pre>
+<dfn>Kuprevicha, 1/1, 220141, Minsk, Belarus. Phone: +375.17.2686911</dfn>
+<hr>
+</pre>
+<h3>Семантические и функциональные строчные теги</h3>
+<pre>
+Пожелания автора:
+<del><font color="red">Данный текст убрать из монографии</font></del> и заменить его на <U><font color=blue>новь помещённый текст.</font></U>
+<hr>
+</pre>
+<h3>Работа со строчными и блоковыми цитатами</h3>
+<pre>
+Цитата короткая:
+<dfn>И всё-­таки она вертится!</dfn>
+
+Цитата занимающая несколько предложений:
+
+    О сколько нам открытий чудных
+    Готовят просвещенья дух
+    И опыт, сын ошибок трудных,
+    И гений, парадоксов друг,
+    И случай, бог изобретатель...
+</pre>
+<hr>
+<h3>Семантические и функциональные строчные теги</h3>
+<p><b>Тэг &lt;STRONG&gt; делает данный фрагмент текста более важным.</b> <dfn>Тэг &lt;em&gt; менее важным.</dfn>
+    В то время как теги &lt;b&gt; и &lt;i&gt; делают текст просто <b>полужирным</b> и <dfn>курсивом</dfn> соответственно.
+</p><hr>
+<h3>Теги форматирования машинного языка</h3>
+<p>При выполнении программного кода на языке PERL:</p>
+<code><pre>
+#!/usr/local/bin/perl
+print "Content&ndash;type: text/html\n\n";
+print "&lt;H1&gt;Hello World&lt;/H1&gt;\n";
+</pre></code>
+<p>Программа выведет:</p>
+<code>Hello, World!</code>
+<p>Однако в браузере у нас будет отображаться результат выполнения этой программы:</p>
+<h1>Hello, World!</h1>
+<hr>
+<h3>Комментарии и литералы(мнемоники) в HTML</h3>
+<code><pre>
+&lt;!&ndash;&ndash; это комментарий &ndash;&ndash;&gt;
+                &lt;!&ndash;&ndash; и это также комментарий,
+                занимающий более одной строки &ndash;&ndash;&gt;
+                <hr>
+</pre></code>
+<h3>Теги &ndash;над­ и подстрочных символов</h3>
+<h4 align="center">Магазин работает:</h4>
+
+
+<pre><p align="center">
+c 08<sup>30</sup> до 18<sup>30</sup>
+обед с 1300 до 1400
+выходной: суббота, воскресенье
+<hr></p></pre>
+<h3>Вот такой текст</h3>
+<style>
+    p.dline {
+     line-height: 0.7;
+    }
+   </style>
+<pre><h3><p class="dline">
+Э о  р с о  е ё ы  т к т
+ т  п о т  в с л й  е с
+</pre>
+</p></h3>
+<hr>
+<h3>Акроним и курсив</h3>
+<p>ТФ: Y(x)=e<sup>-­iπx</sup>+log<sub>x</sub>4</p>
+<hr>
+<h3>Тег small внтури абзаца</h3>
+<p align="right"><font size="2">Создано при помощи блокнота©</font></p>
+</body>
+</html>
