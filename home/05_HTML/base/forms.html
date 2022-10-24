@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Формы</title>
+    <style> table {width: 700px;}
+    td {vertical-align: top}
+    li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+    </style>
+</head>
+<body>
+<table ><tr>
+    <td> <p><b>Простая форма поиска с вариантами:</b></p>
+        <form action="http://fe.it-academy.by/TestForm.php" name="Строка поиска" method="get">
+        <FIELDSET> 
+        <LEGEND>Строка поиска</LEGEND> 
+        <p><input type="search" name="q" placeholder="" maxlength="10"> 
+            <input type="submit" value="Искать"><br>
+            <input type="radio" name="Поиск">на сайте<input type="radio" name="Поиск">в google</p> 
+            </FIELDSET>
+        </form></td><td>
+            <p><b>Простая форма поиска с вариантами:</b></p><form action="http://fe.it-academy.by/TestForm.php" name="Строка поиска" method="get">
+            <FIELDSET> 
+            <LEGEND>Строка поиска</LEGEND> 
+            <p><input type="search" name="q" required> *
+                <input type="submit" value="Искать"><br>
+                <input type="radio" name="Поиск">на сайте<input type="radio" name="Поиск">в google</p>
+                <p>* - обязателное поле</p>
+                </FIELDSET>
+            </form> </td>
+</tr>
+<tr>
+    <td><p><b>Простая форма авторизации:</b></p>
+        <form action="http://fe.it-academy.by/TestForm.php" name="Строка поиска" method="get">
+            <fieldset>
+            <legend>Авторизуйтесь</legend>
+            <p><input type="text" required>* Логин</p>
+            <p><input type="password" required>* Пароль</p>
+            <input type="checkbox"> Оставаться в системе <br>
+            <input type="button" value="Войти">
+            <p>* - обязателное поле</p>
+        </fieldset>
+        </form>
+    
+    </td>
+    <td><p><b>Опрос(голосование):</b></p>
+    <form action="http://fe.it-academy.by/TestForm.php" name="Строка поиска" method="get">
+        <fieldset>
+            <legend>Как вам?</legend>
+            <p><input type="radio" name="как вам?"> ничего <br>
+                <input type="radio"name="как вам?"> неплохо <br>
+                <input type="radio"name="как вам?"> хорошо<br>
+                <input type="radio"name="как вам?"> супер<br>
+                <input type="button" value="Отправить">
+                <input type="hidden" name="date_voite" value="2013.12.31"> </p>
+        </fieldset>
+    </form></td>
+</tr>
+<tr>
+    <td><p><b>Отзывы:</b></p><form action="http://fe.it-academy.by/TestForm.php" name="Строка поиска" method="post">
+        <fieldset>
+            <legend>Оставьте Ваш отзыв</legend>
+            <p><input type="text" required>* Имя<br>
+            <input type="email" required>* e-mail
+         </p>
+        <p><input type="text" placeholder="Форма отправки"></p>
+        <input type="button" value="Отправить">
+        <p>* - обязателное поле</p>
+        </fieldset>
+    </form></td>
+    <td><p><b>Выпадающий и мульти списки:</b></p><form action="http://fe.it-academy.by/TestForm.php" name="Строка поиска" method="get">
+        <fieldset>
+            <legend>Города РБ</legend>
+            <p><select>
+                <option>Брест</option>
+                <option>Минск</option>
+                <option>Витебск</option>
+              </select>
+              <select multiple size="8">
+                <option disabled>Города РБ</option>
+                <option>&nbsp;&nbsp;&nbsp;&nbsp;Брест</option>
+                <option>&nbsp;&nbsp;&nbsp;&nbsp;Минск</option>
+                <option>&nbsp;&nbsp;&nbsp;&nbsp;Витебск</option>
+                <option disabled>Города России</option>
+                    <option>&nbsp;&nbsp;&nbsp;&nbsp;Москва</option>
+                    <option>&nbsp;&nbsp;&nbsp;&nbsp;Рязань</option>
+                    <option>&nbsp;&nbsp;&nbsp;&nbsp;Магадан</option>
+                </select>
+            <input type="button" value="Ok"></p>
+        </fieldset>
+    </form></td>
+</tr>
+<tr>
+    <td><p><b>Загрузка файла на сервер:</b></p><form action="http://fe.it-academy.by/TestForm.php" name="Строка поиска" method="post">
+        <fieldset>
+            <legend>Upload</legend>
+            
+        </fieldset>
+    </form></td>
+    <td><p><b>Валидация данных HTML5:</b></p><form action="http://fe.it-academy.by/TestForm.php" name="Строка поиска" method="get">
+        <fieldset>
+            <legend>Строка поиска</legend>
+            
+        </fieldset>
+    </form></td>
+</tr>
+</table>
+</body>
+</html>
